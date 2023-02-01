@@ -6,7 +6,7 @@ var fs = require('fs');
 var home_url = "http://carapi.heroku.com";
 
 app.use(express.static('public'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.get('/', function (req, res) {
     res.render('index', { title: 'Carapi', subtitle: 'All makes and models of vehicles for free for your projects.', message: 'We have 74 makes of vehicles until now'});

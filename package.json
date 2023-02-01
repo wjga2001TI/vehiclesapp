@@ -25,6 +25,7 @@
   "homepage": "https://github.com/cesjam7/autoapi#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "jade": "^1.11.0"
+    "pug": "^3.0.2",
+    "fast-csv": "^2.4.1"
   }
 }
