@@ -1,0 +1,30 @@
+{
+  "name": "carapi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Todas las marcas y modelos de vehículos gratuitamente para tus proyectos.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesjam7/autoapi.git"
+  },
+  "keywords": [
+    "auto",
+    "api",
+    "carro",
+    "vehiculo"
+  ],
+  "author": "Cesar Aquino Maximiliano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesjam7/autoapi/issues"
+  },
+  "homepage": "https://github.com/cesjam7/autoapi#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  }
+}

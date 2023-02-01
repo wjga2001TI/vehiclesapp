@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel='stylesheet')
+        link(href='stylesheets/main.css', rel='stylesheet')
+    body
+        nav(class='navbar navbar-default')
+            div.container-fluid
+                div.navbar-header
+                    button(type='button', class='navbar-toggle collapsed', data='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                        span.sr-only Toggle navigation
+                        each val in [1, 2, 3]
+                            span.icon-bar
+                    a(class='navbar-brand display-xs') Menú
+                div(class='collapse navbar-collapse', id='bs-example-navbar-collapse-1')
+                    ul(class='nav navbar-nav')
+                        li
+                            a(href='/') Home
+                        li
+                            a(href='#') About
+                        li
+                            a(href='#') Documentation
+        div.container
+            header
+                h1!= title
+                h2!= subtitle
+                h3!= message
+            section.home_api
+                h2.text-center It's very simple
+                div(class='input-group')
+                    span(class='input-group-addon url') http://carapi.heroku.com/api/
+                    input(type='text', class='form-control', placeholder='make/22')
+                    span.input-group-btn
+                        button(class='btn btn-primary') View
+                small.help You can use 'make/14' or model/610 or year/1992
+                h3
+                    span#name_model Fiat
+                    span 's data
+                pre#view_model.
+                    {
+                            "id": "22",
+                    	"slug": "fiat",
+                    	"make": "FIAT",
+                            "url": "http://carapi.heroku.com/api/make/22",
+                    	"models": [
+                    		{
+                    			"id": "325",
+                    			"model": "500",
+                    			"url": "http://carapi.heroku.com/api/model/325",
+                    			"versions": [
+                    				{
+                    					"year": "2012",
+                    					"url": "http://carapi.heroku.com/api/year/2012"
+                    				}
+                    			]
+                    		},
+                    		{
+                    			"id": "326",
+                    			"model": "Nuova 500",
+                    			"url": "http://carapi.heroku.com/api/model/326",
+                    			"versions": [
+                    				{
+                    					"year": "2012",
+                    					"url": "http://carapi.heroku.com/api/year/2012"
+                    				}
+                    			]
+                    		}
+                    	]
+                    }
+            footer
+                p.text-center Desarrollado por 
+                    a(href="http://cesaraquino.com.pe") César J. Aquino Maximiliano
+    script(src='https://code.jquery.com/jquery-2.2.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js')
+    script(src='javascript/main.js')
